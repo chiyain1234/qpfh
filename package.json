@@ -1,0 +1,47 @@
+{
+  "name": "discordbot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@discordjs/builders": "^1.8.2",
+    "@discordjs/rest": "^2.0.1",
+    "@discordjs/voice": "^0.17.0",
+    "algebrite": "^1.4.0",
+    "app-store-scraper": "^0.18.0",
+    "axios": "^1.5.1",
+    "big-integer": "^1.6.52",
+    "booru": "^2.6.5",
+    "canvas": "^2.11.2",
+    "chartjs-node-canvas": "^4.1.6",
+    "discord-command-cooldown": "^1.0.9",
+    "discord.js": "^13.17.1",
+    "figlet": "^1.7.0",
+    "gifencoder": "^2.0.1",
+    "googleapis": "^137.1.0",
+    "lenny": "^2.0.2",
+    "mathjax-node": "^2.1.1",
+    "mathjs": "^13.0.0",
+    "morse-decoder": "^4.0.1",
+    "ojichat.js": "^0.0.6",
+    "path": "^0.12.7",
+    "random-jokes-api": "^1.5.9",
+    "to-zalgo": "^1.0.1",
+    "translatte": "^3.0.1",
+    "turl": "^1.1.2",
+    "unsplash-js": "^7.0.19",
+    "valid-url": "^1.0.9",
+    "weather-js": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/figlet": "^1.5.8",
+    "@types/gifencoder": "^2.0.3",
+    "@types/valid-url": "^1.0.7"
+  }
+}
