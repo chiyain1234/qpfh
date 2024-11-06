@@ -74,6 +74,7 @@ module.exports = {
                     const vonText = text || "ﾌﾞｫﾝ";
                     const vonArr = ["(っ´∀`)╮ =͟͟͞", "(っ'-')╮=͟͟͞", "三╰( `•ω•)╮-=ﾆ=一＝三", "(っˊᵕˋ)╮=͟͟͞", "(Ｕ 'ᴗ' )⊃≡", "( っ'ヮ')╮ =͟͟͞三", "╰( ^o^)╮-=ニ=", "╰(　`^´ )╮-=ﾆ=一＝三", "(ﾉ*˙˘˙)ﾉ =͟͟͞", "╰( 　T□T)╮-=ﾆ=一＝三", "(´･Д･)╮ =͟͟͞"];
                     await sendEmbed('', `${vonArr[Math.floor(Math.random() * vonArr.length)]}${vonText}`);
+                    break;
                 case 'clap':
                     const clapText = text || "clap";
                     await sendEmbed('', `👏${clapText}👏`);
