@@ -30,7 +30,8 @@ module.exports = {
                     { name: 'girlrate', value: 'girlrate' },
                     { name: 'brain', value: 'brain' },
                     { name: 'height-weight', value: 'height-weight' },
-                    { name: 'friends', value: 'friends' }
+                    { name: 'friends', value: 'friends' },
+                    { name: 'desires', value: 'desires' }
                 )
         )
         .addUserOption(option => 
@@ -191,5 +192,26 @@ module.exports = {
             const embed = createEmbed(`${user.username}`, `${user.username}の親友は__${amount}人__です`);
             i.reply({ embeds: [embed] });
         }
+
+               if (type === 'desires') {
+    // 3つのランダム値を生成
+    const appetiteBase = Math.random();
+    const sleepBase = Math.random();
+    const lustBase = Math.random();
+
+    // 合計を計算
+    const total = appetiteBase + sleepBase + lustBase;
+
+    // 各欲求度を100%にスケール
+    const appetite = Math.round((appetiteBase / total) * 100);
+    const sleep = Math.round((sleepBase / total) * 100);
+    const lust = 100 - (appetite + sleep); // 残りを性欲に割り当て
+
+    const embed = createEmbed(
+        `${user.username}の欲求度`,
+        `\n【食欲】${appetite}%\n【睡眠欲】${sleep}%\n【性欲】${lust}%`
+    );
+    i.reply({ embeds: [embed] });
+}
     },
 };
